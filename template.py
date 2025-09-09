@@ -2,53 +2,78 @@ import os
 from pathlib import Path
 import logging
 
-# Setup logging
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
 # Define project structure
 list_of_files = [
-    # Core directories
-    "data/.gitkeep",
-    "notebooks/.gitkeep",
-    "experiments/.gitkeep",
-    "results/.gitkeep",
 
-    # Source code
+    # GitHub workflow (optional future CI/CD)
+    ".github/workflows/.gitkeep",
+
+    # Source code (pipelines + components)
     "src/__init__.py",
-    "src/models.py",
+    "src/components/__init__.py",
+    "src/components/data_ingestion.py",
+    "src/components/prepare_base_model.py",
+    "src/components/prepare_callbacks.py",
+    "src/components/model_trainer.py",
+    "src/components/model_evaluation.py",
+
+    "src/pipeline/__init__.py",
+    "src/pipeline/stage_01_data_ingestion.py",
+    "src/pipeline/stage_02_prepare_base_model.py",
+    "src/pipeline/stage_03_training.py",
+    "src/pipeline/stage_04_evaluation.py",
+    "src/pipeline/prediction.py",
+
+    "src/config/__init__.py",
+    "src/config/configuration.py",
+
     "src/utils/__init__.py",
     "src/utils/common.py",
 
-    # Components (modular tasks)
-    "src/components/__init__.py",
-    "src/components/data_ingestion.py",
-    "src/components/preprocessing.py",
-    "src/components/feature_extraction.py",
-    "src/components/model_training.py",
-    "src/components/model_evaluation.py",
+    "src/logging/__init__.py",
 
-    # Pipeline scripts
-    "src/pipeline/__init__.py",
-    "src/pipeline/stage_01_data_ingestion.py",
-    "src/pipeline/stage_02_preprocessing.py",
-    "src/pipeline/stage_03_training.py",
-    "src/pipeline/stage_04_evaluation.py",
+    "src/entity/__init__.py",
+    "src/constants/__init__.py",
+
+    # Notebooks
+    "notebooks/01_data_ingestion.ipynb",
+    "notebooks/02_prepare_base_model.ipynb",
+    "notebooks/03_prepare_callbacks.ipynb",
+    "notebooks/04_training.ipynb",
+    "notebooks/05_model_evaluation.ipynb",
+    "notebooks/trials.ipynb",
+
+    # Data, experiments, results, research
+    "data/.gitkeep",
+    "experiments/.gitkeep",
+    "results/.gitkeep",
+    "research/.gitkeep",
 
     # Configs
     "config/config.yaml",
-    "params.yaml",
+    "config/params.yaml",
 
-    # Environment + dependencies
-    "requirements.txt",
+    # Deployment (optional, for industry reuse)
+    "deploy/app.py",
+    "deploy/Dockerfile",
+    "deploy/setup.py",
+    "deploy/setup.cfg",
+    "deploy/tox.ini",
+    "deploy/requirements.txt",
+
+    # Tests
+    "tests/unit/__init__.py",
+    "tests/integration/__init__.py",
+
+    # Project-level files
     "environment.yml",
-
-    # Documentation
-    "README.md",
-
-    # Example research notebook
-    "notebooks/01_data_exploration.ipynb",
-    "notebooks/02_model_baseline.ipynb",
+    "pyproject.toml",
+    "main.py",
+    "README.md"
 ]
+
 
 # Create directories and files
 for filepath in list_of_files:
@@ -64,4 +89,5 @@ for filepath in list_of_files:
             pass
         logging.info(f"Creating empty file: {filepath}")
     else:
-        logging.info(f"File already exists: {filepath}")
+        logging.info(f"{filename} already exists")
+
