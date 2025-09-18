@@ -1,0 +1,58 @@
+<VRTDataset rasterXSize="1134" rasterYSize="1240">
+  <SRS>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>3.514106, 0.000559838, 0, 7.738646, 0, -0.000559838</GeoTransform>
+  <VRTRasterBand dataType="Int32" band="1">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Int32" band="2">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Int32" band="3">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Int32" band="4">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Int32" band="5">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>5</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Int32" band="6">
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">ibadan_s2_stack_clipped.tif.0.tif</SourceFilename>
+      <SourceBand>6</SourceBand>
+      <SourceProperties RasterYSize="1240" BlockXSize="1134" BlockYSize="1240" DataType="Byte" RasterXSize="1134"/>
+      <SrcRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+      <DstRect xOff="0" xSize="1134" ySize="1240" yOff="0"/>
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>
